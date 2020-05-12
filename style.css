@@ -1,0 +1,57 @@
+body {
+  background-color: #2f3640;
+  color: #ecf0f1;
+  text-shadow: 1px 1px 5px #2f3640;
+  font-family: Courier, Helvetica, sans-serif;
+  text-align: center;
+  margin: 15% auto;
+}
+
+button {
+  color: #ecf0f1;
+  background-color: #fcc9b9;
+  text-shadow: 1px 1px 5px #2f3640;
+  border: none;
+  border-radius: 25%;
+  opacity: 0.9;
+}
+
+h3 {
+  color: #fcc9b9;
+  text-shadow: 1px 1px 5px #2f3640;
+}
+
+ul {
+  text-align: center;
+  list-style-position: inside;
+  font-size: 120%;
+  line-height: 150%;
+  font-weight: 500;
+}
+
+.greeting,
+.form {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.js-bgimage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  /* z-index 가 음수가 되어야 하는 건... body 안에 child로 나머지 element 들이 들어있고 걔네의 기본값이 0이기 때문인듯? */
+  animation: fadeIn 0.5s linear;
+}
